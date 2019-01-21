@@ -1,0 +1,30 @@
+{
+  "name": "ez-meals",
+  "version": "1.0.0",
+  "description": "Mealplan generator based on daily nutrition goals",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SMuyesser/ez-meals.git"
+  },
+  "keywords": [
+    "javascript",
+    "react",
+    "redux",
+    "node",
+    "express",
+    "mongodb",
+    "fitness",
+    "health",
+    "nutrition"
+  ],
+  "author": "Sinan Muyesser",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SMuyesser/ez-meals/issues"
+  },
+  "homepage": "https://github.com/SMuyesser/ez-meals#readme"
+}
