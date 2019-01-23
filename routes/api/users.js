@@ -11,11 +11,6 @@ const validateLoginInput = require("../../validation/login");
 
 const User = require("../../models/User");
 
-// @route 	GET api/users/test
-// @desc 	Tests users route
-// @access 	Public
-router.get("/test", (req, res) => res.json({ msg: "Users Works" }));
-
 // @route 	GET api/users/register
 // @desc 	Register user
 // @access 	Public
@@ -32,11 +27,6 @@ router.post("/register", (req, res) => {
 			errors.email = "Email already exists";
 			return res.status(400).json(errors);
 		} else {
-			const avatar = gravatar.url(req.body.email, {
-				s: "200", //size of gravatar
-				r: "pg", //rating
-				d: "mm" // default if there is no image
-			});
 
 			const newUser = new User({
 				name: req.body.name,
@@ -88,9 +78,7 @@ router.post("/login", (req, res) => {
 				// Create payload that token will deliver
 				const payload = {
 					id: user.id,
-					name: user.name,
-					avatar: user.avatar
-				};
+					name: user.name				};
 				// Sign Token
 				jwt.sign(
 					payload,
