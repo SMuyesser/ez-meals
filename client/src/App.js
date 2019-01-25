@@ -8,6 +8,7 @@ import { Provider } from 'react-redux';
 import store from './store';
 
 import Navbar from './components/layout/Navbar';
+import Landing from './components/layout/Landing';
 import Footer from './components/layout/Footer';
 
 import './App.css';
@@ -37,8 +38,9 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Router>
-          <div className="App">
+          <div className='App'>
             <Navbar />
+            <Route exact path='/' component={Landing} />
             <Footer />
           </div>
         </Router>

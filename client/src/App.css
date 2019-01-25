@@ -1,3 +1,7 @@
+/***********************************************************
+  Landing
+***********************************************************/
+
 .landing {
   position: relative;
   background: url("./images/appetizer-bowls-breakfast-1640770 (1).jpg") no-repeat;
@@ -27,4 +31,12 @@
 
 .form-control::placeholder {
   color: #bbb !important;
+}
+
+/***********************************************************
+  Navbar
+***********************************************************/
+
+nav#navbar {
+  background-color: #24B527;
 }
