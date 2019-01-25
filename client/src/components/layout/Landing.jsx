@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+
 
 class Landing extends Component {
 	// If isAuthenticated is true redirect to dashboard
@@ -17,10 +21,12 @@ class Landing extends Component {
 							<div className="col-md-12 text-center">
 								<h1 className="display-3 mb-4">
 									EZ Meals
+								 			<div id="edamam-badge" data-color="transparent"></div>
 								</h1>
+
 								<p className="lead">
 									{" "}
-									Create a customized meal plan based on your daily nutrio
+									Create a customized meal plan based on your daily nutrition goals.
 								</p>
 								<hr />
 								<Link
