@@ -12,6 +12,7 @@
   margin-bottom: -50px;
 }
 
+/* TODO: Adjust landing for large screens */
 .landing-inner {
   padding-top: 80px;
 }
@@ -33,10 +34,31 @@
   color: #bbb !important;
 }
 
+h1#landing-h1 {
+  color: #5AB623;
+}
+
+#landing-register-btn {
+  background-color: #5AB623;
+  border: #5AB623;
+}
+
+#landing-login-btn {
+  color: #5AB623;
+}
+
 /***********************************************************
   Navbar
 ***********************************************************/
 
 nav#navbar {
-  background-color: #24B527;
+  background-color: #5AB623;
+}
+
+/***********************************************************
+  Footer
+***********************************************************/
+
+footer#ftr {
+  background-color: #5AB623;
 }
