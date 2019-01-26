@@ -19,11 +19,10 @@ class Landing extends Component {
 					<div className="container">
 						<div className="row">
 							<div className="col-md-12 text-center">
-								<h1 className="display-3 mb-4">
+								<h1 className="display-3" id="landing-h1">
 									EZ Meals
-								 			<div id="edamam-badge" data-color="transparent"></div>
 								</h1>
-
+							 	<div className="mb-4" id="edamam-badge" data-color="transparent"></div>
 								<p className="lead">
 									{" "}
 									Create a customized meal plan based on your daily nutrition goals.
@@ -31,12 +30,14 @@ class Landing extends Component {
 								<hr />
 								<Link
 									to="/register"
+									id="landing-register-btn"
 									className="btn btn-lg btn-info mr-2"
 								>
 									Sign Up
 								</Link>
 								<Link
 									to="/login"
+									id="landing-login-btn"
 									className="btn btn-lg btn-light"
 								>
 									Login
